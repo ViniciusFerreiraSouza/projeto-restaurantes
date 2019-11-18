@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" version="2.2.0" PrivateAssests="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\restaurante.repository\restaurante.repository.csproj" />
+  </ItemGroup>
+
+</Project>
