@@ -4,6 +4,59 @@
     "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.repository\\restaurante.repository.csproj": {}
   },
   "projects": {
+    "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.domain\\restaurante.domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.domain\\restaurante.domain.csproj",
+        "projectName": "restaurante.domain",
+        "projectPath": "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.domain\\restaurante.domain.csproj",
+        "packagesPath": "C:\\Users\\note\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\note\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.repository\\restaurante.repository.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -20,14 +73,18 @@
           "C:\\Users\\note\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "projectReferences": {}
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.domain\\restaurante.domain.csproj": {
+                "projectPath": "C:\\Users\\note\\Documents\\Trabalhos e textos\\Dotnet\\ProjetoRestaurantes\\projeto-restaurantes\\restaurante.domain\\restaurante.domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -37,13 +94,19 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -56,6 +119,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }

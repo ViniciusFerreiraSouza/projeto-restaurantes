@@ -1,0 +1,11 @@
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\obj\Debug\netstandard2.1\restaurante.repository.csprojAssemblyReference.cache
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\obj\Debug\netstandard2.1\restaurante.repository.AssemblyInfoInputs.cache
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\obj\Debug\netstandard2.1\restaurante.repository.AssemblyInfo.cs
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\bin\Debug\netstandard2.1\restaurante.repository.deps.json
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\bin\Debug\netstandard2.1\restaurante.repository.dll
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\bin\Debug\netstandard2.1\restaurante.repository.pdb
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\bin\Debug\netstandard2.1\restaurante.domain.dll
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\bin\Debug\netstandard2.1\restaurante.domain.pdb
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\obj\Debug\netstandard2.1\restaurante.repository.csproj.CopyComplete
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\obj\Debug\netstandard2.1\restaurante.repository.dll
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.repository\obj\Debug\netstandard2.1\restaurante.repository.pdb

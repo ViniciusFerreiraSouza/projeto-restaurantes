@@ -2,7 +2,7 @@ namespace restaurante.domain
 {
     public class Consumo
     {
-        public int in{get; set; }
+        public int id{get; set; }
 
         public Restaurante restaurante {get; set; }
 

@@ -1,10 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using restaurante.domain;
 
 namespace restaurante.repository.Data
 {
-    public class DataContext
-    {
-        public class DataContext : DbContext
+    public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options)
             : base (options)
@@ -13,7 +12,6 @@ namespace restaurante.repository.Data
 
         public DbSet<Restaurante> Restaurantes { get; set; }
         public DbSet<Consumo> Consumos { get; set; }
-        
-    }
+    
     }
 }

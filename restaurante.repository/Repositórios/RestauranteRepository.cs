@@ -1,22 +1,29 @@
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using restaurante.domain;
+using restaurante.repository.Data;
+using restaurante.repository.Interfaces;
+
 namespace restaurante.repository.Repositórios
 {
     public class RestauranteRepository: IRestauranteRepository
     {
         DataContext context;
 
-        public RestaurantRepository(DataContext context)
+        public RestauranteRepository(DataContext context)
         {
             this.context=context;
         }
         public void Create(Restaurante obj)
         {
-            context.Restaurante.Add(obj);
+            context.Restaurantes.Add(obj);
             context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            context.Delete.Add(obj);
+            context.Restaurantes.Remove(GetById(id));
             context.SaveChanges();
         }
 
@@ -25,14 +32,14 @@ namespace restaurante.repository.Repositórios
             return context.Restaurantes.ToList();
         }
 
-        public Restaurante GetbyId(int id)
+        public Restaurante GetById(int id)
         {
-            return context.Restauramtes.SingleOrDefault(x=>x.id==id);
+            return context.Restaurantes.SingleOrDefault(x=>x.id==id);
         }
         
-        public void Update(Restaurant obj)
+        public void Update(Restaurante obj)
         {
-            context.Update.Add(obj);
+            context.Entry(obj).State = EntityState.Modified;
             context.SaveChanges();
         }
     }

@@ -1,42 +1,45 @@
 using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using restaurante.domain;
+using restaurante.repository.Data;
 using restaurante.repository.Interfaces;
 
-namespace restaurante.repository.Repositórios
+namespace restaurante.repository.Repositories
 {
     public class ConsumoRepository : IConsumoRepository
     {
         DataContext context;
 
-        public RestaurantRepository(DataContext context)
+        public ConsumoRepository(DataContext context)
         {
             this.context=context;
         }
-        public void Create(Restaurante obj)
+        public void Create(Consumo obj)
         {
-            context.Restaurante.Add(obj);
+            context.Consumos.Add(obj);
             context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            context.Delete.Add(obj);
+            context.Consumos.Remove(GetById(id));
             context.SaveChanges();
         }
 
-        public List<Restaurante> GetAll()
+        public List<Consumo> GetAll()
         {
-            return context.Restaurantes.ToList();
+            return context.Consumos.Include(x=> x.restaurante).ToList();
         }
 
-        public Restaurante GetbyId(int id)
+        public Consumo GetById(int id)
         {
-            return context.Restauramtes.SingleOrDefault(x=>x.id==id);
+            return context.Consumos.Include(x=>x.restaurante).SingleOrDefault(x=>x.id==id);
         }
-        
-        public void Update(Restaurant obj)
+
+        public void Update(Consumo obj)
         {
-            context.Update.Add(obj);
+            context.Entry(obj).State = EntityState.Modified;
             context.SaveChanges();
         }
     }

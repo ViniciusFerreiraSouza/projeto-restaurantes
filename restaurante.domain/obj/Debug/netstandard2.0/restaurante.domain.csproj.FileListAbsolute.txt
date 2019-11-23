@@ -1,0 +1,8 @@
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\obj\Debug\netstandard2.0\restaurante.domain.csprojAssemblyReference.cache
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\obj\Debug\netstandard2.0\restaurante.domain.AssemblyInfoInputs.cache
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\obj\Debug\netstandard2.0\restaurante.domain.AssemblyInfo.cs
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\bin\Debug\netstandard2.0\restaurante.domain.deps.json
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\bin\Debug\netstandard2.0\restaurante.domain.dll
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\bin\Debug\netstandard2.0\restaurante.domain.pdb
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\obj\Debug\netstandard2.0\restaurante.domain.dll
+C:\Users\note\Documents\Trabalhos e textos\Dotnet\ProjetoRestaurantes\projeto-restaurantes\restaurante.domain\obj\Debug\netstandard2.0\restaurante.domain.pdb

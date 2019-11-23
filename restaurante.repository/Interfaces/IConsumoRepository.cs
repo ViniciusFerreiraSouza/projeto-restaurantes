@@ -1,6 +1,8 @@
+using restaurante.domain;
+
 namespace restaurante.repository.Interfaces
 {
-    public class IConsumoRepository
+    public interface IConsumoRepository : IBaseRepository<Consumo>
     {
         
     }

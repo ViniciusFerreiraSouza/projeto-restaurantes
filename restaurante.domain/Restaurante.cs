@@ -3,9 +3,9 @@ namespace restaurante.domain
     public class Restaurante
     {
         public Restaurante( ){}
-        public Restaurante(id myProperty, string nome, string endereco, string bairro, string cidade, string estado) 
+        public Restaurante(int id, string nome, string endereco, string bairro, string cidade, string estado) 
         {
-            this.MyProperty = myProperty;
+            this.id = id;
                 this.nome = nome;
                 this.endereco = endereco;
                 this.bairro = bairro;
@@ -13,7 +13,7 @@ namespace restaurante.domain
                 this.estado = estado;
                
         }
-                public id MyProperty {get; set; }
+        public int id {get; set; }
 
         public string nome {get; set; }
 

@@ -2,7 +2,8 @@ using System.Collections.Generic;
 
 namespace restaurante.repository.Interfaces
 {
-    where Entity : class
+    public interface IBaseRepository<Entity>
+        where Entity : class
     {
         void Create(Entity obj);
 
