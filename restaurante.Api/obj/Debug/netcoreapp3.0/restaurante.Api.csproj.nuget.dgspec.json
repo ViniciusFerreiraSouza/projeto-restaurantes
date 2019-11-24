@@ -1,0 +1,225 @@
+{
+    "format": 1,
+    "restore": {
+      "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Api/restaurante.Api.csrestaurante": {}
+    },
+    "restauranteects": {
+      "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Api/restaurante.Api.csrestaurante": {
+        "version": "1.0.0",
+        "restore": {
+          "restauranteectUniqueName": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Api/restaurante.Api.csrestaurante",
+          "restauranteectName": "restaurante.Api",
+          "restauranteectPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Api/restaurante.Api.csrestaurante",
+          "packagesPath": "/Users/aldrinjr/.nuget/packages/",
+          "outputPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Api/obj/",
+          "restauranteectStyle": "PackageReference",
+          "fallbackFolders": [
+            "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          ],
+          "configFilePaths": [
+            "/Users/aldrinjr/.nuget/NuGet/NuGet.Config"
+          ],
+          "originalTargetFrameworks": [
+            "netcoreapp3.0"
+          ],
+          "sources": {
+            "https://api.nuget.org/v3/index.json": {}
+          },
+          "frameworks": {
+            "netcoreapp3.0": {
+              "restauranteectReferences": {
+                "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Repository/restaurante.Repository.csrestaurante": {
+                  "restauranteectPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Repository/restaurante.Repository.csrestaurante"
+                }
+              }
+            }
+          },
+          "warningProperties": {
+            "warnAsError": [
+              "NU1605"
+            ]
+          }
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "dependencies": {
+              "Microsoft.AspNetCore.Razor.Design": {
+                "suppressParent": "All",
+                "target": "Package",
+                "version": "[2.2.0, )"
+              }
+            },
+            "imports": [
+              "net461",
+              "net462",
+              "net47",
+              "net471",
+              "net472",
+              "net48"
+            ],
+            "assetTargetFallback": true,
+            "warn": true,
+            "frameworkReferences": {
+              "Microsoft.AspNetCore.App": {
+                "privateAssets": "none"
+              },
+              "Microsoft.NETCore.App": {
+                "privateAssets": "all"
+              }
+            },
+            "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          }
+        }
+      },
+      "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Domain/restaurante.Domain.csrestaurante": {
+        "version": "1.0.0",
+        "restore": {
+          "restauranteectUniqueName": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Domain/restaurante.Domain.csrestaurante",
+          "restauranteectName": "restaurante.Domain",
+          "restauranteectPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Domain/restaurante.Domain.csrestaurante",
+          "packagesPath": "/Users/aldrinjr/.nuget/packages/",
+          "outputPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Domain/obj/",
+          "restauranteectStyle": "PackageReference",
+          "fallbackFolders": [
+            "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          ],
+          "configFilePaths": [
+            "/Users/aldrinjr/.nuget/NuGet/NuGet.Config"
+          ],
+          "originalTargetFrameworks": [
+            "netstandard2.1"
+          ],
+          "sources": {
+            "https://api.nuget.org/v3/index.json": {}
+          },
+          "frameworks": {
+            "netstandard2.1": {
+              "restauranteectReferences": {}
+            }
+          },
+          "warningProperties": {
+            "warnAsError": [
+              "NU1605"
+            ]
+          }
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "dependencies": {
+              "EntityFramework": {
+                "target": "Package",
+                "version": "[6.3.0, )"
+              },
+              "Microsoft.EntityFrameworkCore": {
+                "target": "Package",
+                "version": "[3.0.0, )"
+              },
+              "Microsoft.EntityFrameworkCore.Design": {
+                "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+                "suppressParent": "All",
+                "target": "Package",
+                "version": "[3.0.0, )"
+              },
+              "Npgsql.EntityFrameworkCore.PostgreSQL": {
+                "target": "Package",
+                "version": "[3.0.1, )"
+              }
+            },
+            "imports": [
+              "net461",
+              "net462",
+              "net47",
+              "net471",
+              "net472",
+              "net48"
+            ],
+            "assetTargetFallback": true,
+            "warn": true,
+            "frameworkReferences": {
+              "NETStandard.Library": {
+                "privateAssets": "all"
+              }
+            },
+            "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          }
+        }
+      },
+      "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Repository/restaurante.Repository.csrestaurante": {
+        "version": "1.0.0",
+        "restore": {
+          "restauranteectUniqueName": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Repository/restaurante.Repository.csrestaurante",
+          "restauranteectName": "restaurante.Repository",
+          "restauranteectPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Repository/restaurante.Repository.csrestaurante",
+          "packagesPath": "/Users/aldrinjr/.nuget/packages/",
+          "outputPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Repository/obj/",
+          "restauranteectStyle": "PackageReference",
+          "fallbackFolders": [
+            "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          ],
+          "configFilePaths": [
+            "/Users/aldrinjr/.nuget/NuGet/NuGet.Config"
+          ],
+          "originalTargetFrameworks": [
+            "netstandard2.1"
+          ],
+          "sources": {
+            "https://api.nuget.org/v3/index.json": {}
+          },
+          "frameworks": {
+            "netstandard2.1": {
+              "restauranteectReferences": {
+                "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Domain/restaurante.Domain.csrestaurante": {
+                  "restauranteectPath": "/Users/restauranteeto-restaurantes/ContaRestaurante/restaurante.Domain/restaurante.Domain.csrestaurante"
+                }
+              }
+            }
+          },
+          "warningProperties": {
+            "warnAsError": [
+              "NU1605"
+            ]
+          }
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "dependencies": {
+              "EntityFramework": {
+                "target": "Package",
+                "version": "[6.3.0, )"
+              },
+              "Microsoft.EntityFrameworkCore": {
+                "target": "Package",
+                "version": "[3.0.0, )"
+              },
+              "Microsoft.EntityFrameworkCore.Design": {
+                "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+                "suppressParent": "All",
+                "target": "Package",
+                "version": "[3.0.0, )"
+              },
+              "Npgsql.EntityFrameworkCore.PostgreSQL": {
+                "target": "Package",
+                "version": "[3.0.1, )"
+              }
+            },
+            "imports": [
+              "net461",
+              "net462",
+              "net47",
+              "net471",
+              "net472",
+              "net48"
+            ],
+            "assetTargetFallback": true,
+            "warn": true,
+            "frameworkReferences": {
+              "NETStandard.Library": {
+                "privateAssets": "all"
+              }
+            },
+            "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          }
+        }
+      }
+    }
+  }
