@@ -1,8 +1,8 @@
 {
     "runtimeOptions": {
       "additionalProbingPaths": [
-        "/Users/ProjetoRestaurantes/.dotnet/store/|arch|/|tfm|",
-        "/Users/ProjetoRestaurantes/.nuget/packages",
+        "/Users/projeto-restaurantes/.dotnet/store/|arch|/|tfm|",
+        "/Users/projeto-restaurantes/.nuget/packages",
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ]
     }

@@ -4,6 +4,6 @@ namespace restaurante.repository.Interfaces
 {
     public interface IConsumoRepository : IBaseRepository<Consumo>
     {
-        
+        dynamic GetMenorPreco();
     }
 }
