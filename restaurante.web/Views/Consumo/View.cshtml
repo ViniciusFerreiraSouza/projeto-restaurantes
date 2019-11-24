@@ -1,0 +1,44 @@
+@model Proj.Domain.Entities.Consumo
+
+<h2 class="text-center">Consumos restaurante</h2>
+
+<div class="form-group col-12 col-sm-8 col-md-6 mx-auto">
+    <div class="editor-label">
+        restaurante
+    </div>
+    <div class="editor-field">
+        <select class="form-control" name="restaurante.id" required>
+            <option value="" disabled>Selecione o restaurante</option>
+            @foreach(var restaurante in ViewBag.Restaurante)
+            {
+                <option value="@restaurante.id" selected="@(@restaurante.id == Model.restaurante.id)">@restaurante.identificacao | @restaurante.cidade</option>
+            }
+        </select>   
+    </div>
+</div>
+
+<div class="form-group col-12 col-sm-8 col-md-6 mx-auto">
+    <div class="editor-label">
+        Data 
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.data, new { htmlAttributes = new { @class = "form-control"} })
+        <small class="form-text text-muted">@Html.ValidationMessageFor(model => model.data)</small>
+    </div>
+</div>
+
+<div class="form-group col-12 col-sm-8 col-md-6 mx-auto">
+    <div class="editor-label">
+        Valor 
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.valor, new { htmlAttributes = new { @class = "form-control"} })
+        <small class="form-text text-muted">@Html.ValidationMessageFor(model => model.valor)</small>
+    </div>
+</div>
+
+<div class="d-block text-center">
+    <button type="submit" class="btn btn-primary d-block my-4 mx-auto">Atualizar</button>
+
+    @Html.ActionLink("Voltar para listagem", "Index", null, null, new { @class = "mt-2 d-block" })
+</div> 

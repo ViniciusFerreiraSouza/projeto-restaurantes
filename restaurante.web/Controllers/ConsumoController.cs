@@ -11,27 +11,62 @@ namespace restaurante.web.Controllers
 {
     public class ConsumoController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private IConsumoRepository consumoRepository;
+        private IRestauranteRepository restauranteRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ConsumoController(IConsumoRepository consumoRepository, IRestauranteRepository restauranteRepository)
         {
-            _logger = logger;
+            this.consumoRepository = consumoRepository;
+            this.restauranteRepository = restauranteRepository;
         }
 
         public IActionResult Index()
         {
+            ViewBag.menorPreco = consumoRepository.GetMenorPreco();
+            ViewBag.maiorPreco = consumoRepository.GetMaiorPreco();
+            return View(consumoRepository.GetAll());
+        }
+
+        public IActionResult View(int id)
+        {
+            ViewBag.Restaurantes = restauranteRepository.GetAll();
+            return View(consumoRepository.GetByID(id));
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            ViewBag.Restaurantes = restauranteRepository.GetAll();
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
+        [HttpPost]
+        public RedirectToActionResult Create(Consumo entity)
+        {   //resolver problema na entidade restaurante
+            entity.restaurante = restauranteRepository.GetByID(entity.restaurante.id);
+            consumoRepository.Create(entity);
+            return RedirectToAction("Index");
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpGet]
+        public IActionResult Update(int id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            ViewBag.restaurante = restauranteRepository.GetAll();
+            return View(consumoRepository.GetByID(id));
+        }
+
+        [HttpPost]
+        public RedirectToActionResult Update(Consumo entity)
+        {
+            entity.restaurante = restauranteRepository.GetByID(entity.restaurante.id);
+            consumoRepository.Update(entity);
+            return RedirectToAction("Index");
+        }
+
+        public RedirectToActionResult Delete(int id)
+        {
+            consumoRepository.Delete(id);
+            return RedirectToAction("Index");
         }
     }
 }
